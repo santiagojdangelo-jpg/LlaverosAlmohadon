@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #07070d;
+  color: #e7e7f3;
+}
+
+body {
+  background-image:
+    radial-gradient(60rem 30rem at 10% -10%, rgba(139, 92, 246, 0.18), transparent 60%),
+    radial-gradient(50rem 30rem at 100% 0%, rgba(236, 72, 153, 0.12), transparent 60%),
+    radial-gradient(40rem 30rem at 50% 110%, rgba(34, 211, 238, 0.08), transparent 60%);
+  background-attachment: fixed;
+  min-height: 100dvh;
+}
+
+/* Sliders con el color de la marca */
+input[type="range"] {
+  accent-color: #a78bfa;
+}
+
+/* Evita que el navegador "robe" el gesto de arrastre dentro del canvas (móvil) */
+.canvas-touch {
+  touch-action: none;
+}
